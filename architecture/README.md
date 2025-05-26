@@ -1,0 +1,1 @@
+This folder holds AI-Augmented Incident Lifecycle and Reference Architecture diagrams.

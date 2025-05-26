@@ -1,0 +1,13 @@
+# ArgoCD-compatible remediation triggered by ML alert context
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: auto-remediation
+spec:
+  template:
+    spec:
+      containers:
+      - name: remediation
+        image: python:3.9
+        command: ["python", "-c", "print('Simulated rollback triggered')"]
+      restartPolicy: Never
